@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context="com.example.andreiw.appgps.MainActivity">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtLatitude"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/Latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/Longitude"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txtLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txtEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Endereco"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txtcidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Cidade"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txtestado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Estado"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txtpais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pais"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Buscar"
+            android:onClick="BuscarLocal"
+            android:layout_span="2"/>
+    </TableRow>
+</TableLayout>
